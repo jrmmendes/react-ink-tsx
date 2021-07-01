@@ -22,7 +22,10 @@
     "strictPropertyInitialization": true,
     "stripInternal": true,
     "target": "ES2018",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./src/types",
+    ]
   },
   "include": [
     "**/*.ts",
@@ -32,7 +35,6 @@
     "dist",
     "node_modules",
     "../../node_modules/**",
-    "templates/**/*.ts",
     "**/*.d.ts",
     "**/*.test.tsx"
   ],

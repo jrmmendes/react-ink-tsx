@@ -1,5 +1,7 @@
 import { Box, Text, useApp, useInput } from 'ink';
 import React, { FC, useState } from 'react';
+import Spinner from 'ink-spinner';
+import ProgressBar from 'ink-progress-bar';
 
 
 const validOptions = ['q', 'n', 'd'];
@@ -29,7 +31,7 @@ export const App: FC = () => {
       <Box
         flexDirection='column'
         borderStyle='single'
-        padding={3}>
+        padding={1}>
 
         <Text
           bold={true} color={inputStatus === 'invalid' ? 'red' : 'green'}
@@ -37,7 +39,9 @@ export const App: FC = () => {
           Current input is {inputStatus}
         </Text>
         <Text>
+          <Spinner type='bouncingBall' />
           <Text bold={true} color='gray'>[Option]</Text> &gt;&gt; {option}
+          <ProgressBar percent={30} />
         </Text>
       </Box>
       <Text wrap='middle'>Valid inputs: q (quit), n, d</Text>
