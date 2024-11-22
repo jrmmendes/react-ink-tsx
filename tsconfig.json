@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
-    "charset": "utf8",
     "declaration": true,
     "experimentalDecorators": true,
     "inlineSourceMap": true,
@@ -10,32 +8,19 @@
     "module": "CommonJS",
     "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "jsx": "react",
     "resolveJsonModule": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
     "stripInternal": true,
     "target": "ES2018",
     "esModuleInterop": true,
-    "typeRoots": [
-      "./src/types",
-    ]
+    "typeRoots": ["./src/types"]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": [
     "dist",
     "node_modules",
     "../../node_modules/**",
     "**/*.d.ts",
     "**/*.test.tsx"
-  ],
+  ]
 }
