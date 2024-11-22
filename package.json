@@ -6,12 +6,15 @@
     "start:dev": "npm-run-all build start"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "ink": "^3.0.8",
     "ink-progress-bar": "^3.0.0",
     "ink-spinner": "^4.0.2",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.4",
     "@types/ink": "^2.0.3",
     "@types/react": "^17.0.11",
     "chalk": "^4.1.1",
